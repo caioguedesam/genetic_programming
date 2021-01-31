@@ -1,0 +1,32 @@
+if parent1 != None and len(parent1.children) != 2:
+        with open('log.txt', 'a') as f:
+            print('Error on crossover: Parent 1 has ' + str(len(parent1.children)) + ' children', file=f)
+            print('Parent 1: ' + str(parent1), file=f)
+            print('Parent 2: ' + str(parent2), file=f)
+            print('Node 1: ' + str(node1), file=f)
+            print('Node 2: ' + str(node2), file=f)
+            print('Tree 1:', file=f)
+            print_tree(t1_original, f=f)
+            print('Tree 1 after cross:', file=f)
+            print_tree(t1, f=f)
+            print('Tree 2:', file=f)
+            print_tree(t2_original, f=f)
+            print('Tree 2 after cross:', file=f)
+            print_tree(t2, f=f)
+        raise KeyboardInterrupt
+    if parent2 != None and len(parent2.children) != 2:
+        with open('log.txt', 'a') as f:
+            print('Error on crossover: Parent 2 has ' + str(len(parent2.children)) + ' children', file=f)
+            print('Parent 1: ' + str(parent1), file=f)
+            print('Parent 2: ' + str(parent2), file=f)
+            print('Node 1: ' + str(node1), file=f)
+            print('Node 2: ' + str(node2), file=f)
+            print('Tree 1:', file=f)
+            print_tree(t1_original, f=f)
+            print('Tree 1 after cross:', file=f)
+            print_tree(t1, f=f)
+            print('Tree 2:', file=f)
+            print_tree(t2_original, f=f)
+            print('Tree 2 after cross:', file=f)
+            print_tree(t2, f=f)
+        raise KeyboardInterrupt
